@@ -46,9 +46,48 @@
             box-shadow: 2px 2px #888888;
             border: 1px solid black;
             margin-top: -50px;
-           
+         }
+         .third{
+             
+             display: flex;
+             justify-content: center; 
+             align-items: center;
+             margin-top: 100px;
 
-        }
+         }
+         .third-part{
+             width: 500px;
+             text-align: center;
+
+         }
+         .fourth{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .fourth-part{
+             width: 300px;
+
+         }
+         .fourth-img{
+             width: 400px;
+
+         }
+         .fifth{
+             flex-direction: row-reverse;
+         }
+         .fifth-part{
+             text-align: right;
+         }
+         @media  screen and (max-width : 480px) {
+             .box , .footer , .third , .fourth, .fifth{
+                 flex-direction: column;
+                 align-items: center;
+                 justify-content: center;
+                 width: 100%;
+             }
+         }
        
         
         
@@ -79,6 +118,28 @@
         <div class="footer-part-1">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minima molestias labore consequatur laudantium debitis suscipit earum quaerat distinctio, a nobis sunt, quos veritatis? Error dolorum ipsam odio est vero!</p>
         </div>
+    </section>
+    <section class="third">
+        <div class="third-part">
+            <h1>This is third</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rerum, consequatur explicabo dolorem eum repudiandae voluptatibus impedit cupiditate reiciendis, voluptas nemo ex error porro sunt facere voluptatum molestiae illum. Minima.</p>
+        </div>
+    </section>
+    <section class="fourth">
+        <div class="fourth-part">
+            <h1>This is Twice</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis, eius aperiam deleniti doloribus vitae debitis natus ad, cum suscipit nostrum sit ab. Recusandae ratione sed magnam molestias quis sequi.</p>
+
+        </div>
+        <img src="./twice1.jpg" class="fourth-img" alt="">
+    </section>
+    <section class="fourth fifth">
+        <div class="fourth-part fifth-part">
+            <h1>This is Twice</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis, eius aperiam deleniti doloribus vitae debitis natus ad, cum suscipit nostrum sit ab. Recusandae ratione sed magnam molestias quis sequi.</p>
+
+        </div>
+        <img src="./twice2.jpg" class="fourth-img" alt="">
     </section>
 </body>
 </html>
