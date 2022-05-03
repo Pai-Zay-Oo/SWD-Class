@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box practical</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            display: flex;
+            flex-grow: 1;
+            height: 50vh;
+        }
+        .left{
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+        .right{
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-content{
+            width: 50%;
+        }
+        .right-content{
+            width: 50%;
+        }
+        .footer{
+            width: 990px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+        .footer-part-1{
+            width: 320px;
+            background-color: bisque;
+            box-shadow: 2px 2px #888888;
+            border: 1px solid black;
+            margin-top: -50px;
+           
+
+        }
+       
+        
+        
+    </style>
+</head>
+<body>
+    <section class="box">
+        <div class="left">
+            <div class="left-content">
+                <h1>This is left</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vel magni perferendis dolores suscipit eligendi quo voluptate ullam eum tempore officia repellendus saepe reiciendis fuga sed facilis, autem nostrum ipsa.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-content">
+                <h1>This is right</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vel magni perferendis dolores suscipit eligendi quo voluptate ullam eum tempore officia repellendus saepe reiciendis fuga sed facilis, autem nostrum ipsa.</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-part-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero quos harum molestiae facere. Temporibus hic qui odio labore vel quod tempora assumenda eligendi consequatur praesentium, eveniet id perferendis fuga.</p>
+        </div>
+        <div class="footer-part-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla qui iure natus vitae harum tenetur odio ducimus optio aspernatur ratione et, mollitia, id deserunt eveniet, est porro! Placeat, officia dolorum!</p>
+        </div>
+        <div class="footer-part-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minima molestias labore consequatur laudantium debitis suscipit earum quaerat distinctio, a nobis sunt, quos veritatis? Error dolorum ipsam odio est vero!</p>
+        </div>
+    </section>
+</body>
+</html>
