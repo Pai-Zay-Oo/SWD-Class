@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .home{
+            width: 100%;
+            height: 100vh;
+            background: url(./j.jpg);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 0px 200px;
+            position: relative;
+            z-index: -2;
+        }
+       .gradient{
+           width: 100%;
+           height: 100%;
+           background: #20002c;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+           position: absolute;
+           top: 0;
+           left: 0;
+           opacity: 0.5;
+           z-index: -1;
+       }
+        .home-para{
+            width: 300px;
+            height: 200px;
+        }
+        .arrow{
+          width: 25px;
+          height: 25px;
+          background-color: red;
+          position: sticky;
+          bottom: 50px;
+          left: 1450px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            
+            
+        }
+        .arrow-up{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="home" id="hone">
+        <div class="home-para">
+            <h1>This is Twice</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea iste, voluptatum illo voluptatem, distinctio, sit a recusandae exercitationem autem eveniet nostrum soluta! Quis praesentium tempore soluta nisi officia itaque tempora.</p>
+        </div>
+        <div class="gradient">
+
+        </div>
+    </section>
+    <section style="height: 100vh;"></section>
+    <section style="height: 100vh;"></section>
+    <a href="#hone" >
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-up" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>
+
+        </div>
+    </a>
+</body>
+</html>

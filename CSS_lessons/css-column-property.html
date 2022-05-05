@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        h1{
+            color: blueviolet;
+            margin-bottom: 30px;
+        }
+        .paragraph{
+            column-count: 3;
+            column-rule: 1px solid red;
+            column-gap: 50px;
+            column-width: 300px;
+        }
+        .paragraph p{
+            margin-bottom: 40px;
+            line-height: 20px;
+            text-align: justify;
+        }
+        .full{
+            column-span: all;
+            margin-top: 10px;
+        }
+        @media  screen and (max-width:480px) {
+            body{
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS-3 Column Property</h1>
+    <div class="paragraph">
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero architecto assumenda illum omnis saepe odit quis vitae iusto necessitatibus quae nam sapiente blanditiis, laboriosam, quibusdam exercitationem autem asperiores cumque ut? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sunt sit officiis aperiam distinctio consectetur enim atque dolores, ipsum quibusdam assumenda, dignissimos voluptatum. Suscipit sequi consectetur distinctio non optio maiores.</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, id eveniet? Voluptas inventore neque autem, sed reprehenderit similique quae quam reiciendis soluta enim quaerat dolorum quidem animi expedita vel. Non.</p>
+        <p class="full"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eaque voluptatum corporis suscipit. Voluptatum earum quisquam nobis provident repudiandae accusantium. Nostrum voluptates repellat maiores tempora numquam, delectus itaque esse ipsum.</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum eos cum nemo ullam odio obcaecati odit similique libero natus eveniet esse, aliquam pariatur, enim, neque error tempore possimus magnam.</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci at, consequuntur ex qui itaque tenetur quia vitae aperiam eius, delectus ducimus facere accusantium quae beatae culpa laboriosam voluptatibus in!</p>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, voluptas hic natus ad aliquid, quos corporis reiciendis repellat et, consectetur sapiente quam! Quos veritatis fuga alias itaque. Explicabo, natus saepe.</p>
+       
+    </div>
+</body>
+</html>
