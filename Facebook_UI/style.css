@@ -4,6 +4,9 @@
     --sec_bg :  #ffffff;
     --text : #696969;
     --box : #f0f2f5;
+    --danger: #e41e3f;
+    --successs: #45bd62;
+    --yellow: #fce8b8
 
 }
 *{
@@ -56,12 +59,204 @@ body{
 .center{
     width: 50%;
 }
-.center-link{
-    margin: 15px 0;  
+.center-link-box{
+    display: flex;
+    align-items: center;
+    
 }
-.fa-home{
+.center-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 130px;
+
+}
+.fa-house{
     color: var(--primary);
 }
+.noti-box{
+    position: relative;
+    
+}
+.noti{
+    font-size: 12px;
+    background-color: var(--danger);
+    color: #ffffff !important;
+    border-radius: 45%;
+    position: absolute;
+    top: 17px;
+    left: 43px;
+    width: 30px;
+    height: 20px;
+    padding: 6px;
+    
+    
+}
+.center-link:hover{
+    background-color: var(--box);
+    border-radius: 10px;
+   
+    transition: 0.5s;
+    
+}
+.fa-house:hover{
+    background-color: var(--sec_bg);
+}
 .right{
+    width: 25%;
+}
+.right-box{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.profile{
+    width: 100px;
+    height: 50px ;
+    display: flex;
+    align-items: center;
+  
+}
+.profile-img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.profile:hover{
+    background-color: var(--box); 
+    border-radius: 10px;
+}
+.right-noti-box{
+    display: flex;
+}
+.right-noti{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--box);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.right-noti:hover{
+    background-color: #999999;
+    transition: 0.5s;
+}
+/*bottom paragraph*/
+.fb{
+    display: flex;
+}
+.setting{
+    width: 25%;
+}
+.news-feed{
+    width: 50%;
+    
+}
+.myday-list{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    
+    
+}
+.myday-item{
+    width: 20%;
+    height: 210px;
+    border-radius: 15px;
+    background-image: url(./images/jihyo.jpg);
+    background-size: 230%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-right: 5px;
+    
+    
+    
+}
+.bg1{
+    background-image: url(./images/twice1.jpg);
+}
+.bg2{
+    background-image: url(./images/twice2.jpg);
+}
+.bg3{
+    background-image: url(./images/twice3.jpg);
+}
+.bg4{
+    background-image: url(./images/twice4.jpg);
+}
+.myday-owner{
+   width: 40px;
+   height: 40px;
+   background-color: var(--primary);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.myday-owner-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.caption{
+    color: #ffffff;
+    font-weight: bold;
+}
+.arrow{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sec_bg);
+    margin-left: 645px;
+    margin-top: 91px;
+
+}
+.add-post{
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--sec_bg);
+    padding: 10px;
+}
+.writeFeed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+   
+.writeFeed .picture img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.whats{
+    width: 210px;
+    height: 41px;
+    margin: 15px 0;
+    background-color: var(--box);
+    padding: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+
+}
+.divider{
+    border: 0.1px solid #f0f2f9;
+}
+.chats{
     width: 25%;
 }
