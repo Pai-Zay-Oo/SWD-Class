@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+
+        }
+        .header{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 23px auto;
+            background-color: #BAE8E8;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .logo{
+            font-size: 1.5rem;
+            font-weight: bold; 
+            color: #272343; 
+        }
+        button{
+            display: none;
+        }
+        .nav{
+
+        }
+        .nav-list{
+            
+        }
+        .nav-item{
+            list-style-type: none;
+            display: inline-block;
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 15px;
+            width: 100px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #ffd803;
+           
+        }
+        .nav-item:hover{
+                background-color: #ffb100; 
+         }
+        
+        .nav-item a{
+            color: #272343;
+            text-decoration: none;
+        }
+        @media screen and (max-width: 480px) {
+            .header{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            button{
+                display: block;
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                border: none;
+                background-color: #ffd803;
+            }
+            .nav{
+                display: none;
+                width: 100%;
+            }
+            .nav-item{
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .nav-item:first-child{
+                margin-top: 15px;
+            }
+            .nav-item:hover{
+                background-color: #ffb100; 
+            }
+            
+            .show-nav{
+                display: block;
+                animation: first 0.5s;
+                position: absolute;
+                z-index: -1;
+                top: 100;
+                right: 0;
+                top: 200;
+                bottom: 100;
+                top: 73px;
+            }
+            
+            @keyframes first {
+                0%{
+                    transform: translateY(-100px);
+                }
+                100%{
+                    transform: translateX(0);
+                }
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Pai Zay</div>
+        <button class="btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Location</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let navControl = document.querySelector(".nav");
+        let btnControl = document.getElementsByClassName("btn");
+        btnControl[0].addEventListener("click",function(){
+            navControl.classList.toggle("show-nav");
+        })
+    </script>
+</body>
+</html>
