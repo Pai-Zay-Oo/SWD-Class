@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .news{
+            margin: 10px auto;
+            columns: 3 280px;
+        }
+        .card{
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .card-img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="card">
+            <h3 class="title"></h3>
+            <img src="" alt="" class="card-img">
+            <p class="content"></p>
+            <span class="author"></span>
+            <a href="">See more</a>
+        </div>
+    </div>
+    <script src="./news.js"></script>
+    <script>
+        let body = document.querySelector('.news');
+        let news = data.articles;
+        console.log(news);
+        news.map(function(ele,index){
+            body.innerHTML +=`
+            <div class="card">
+                <h3 class="title">${ele.title}</h3>
+                <img src="${ele.urlToImage}" alt="" class="card-img">
+                
+                <span class="author">${ele.author}</span>
+                <a href="${ele.url}">See more</a>
+            </div>
+            
+            `
+        })
+    </script>
+</body>
+</html>
