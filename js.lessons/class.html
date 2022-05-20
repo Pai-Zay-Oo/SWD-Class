@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mySelf = {
+            name: 'pai zay oo',
+            age: 23,
+            Introduction: function(){
+                return `Hello!My name is ${this.name} and I am ${this.age} years old.`
+            }
+        };
+        class myObj{
+            name= 'pai zay oo';
+            age = 23;
+            #gf = 'mina';
+            showGf(){
+                return `My gf name is ${this.#gf}`
+            }
+            Introduction(){
+                return `Hello!My name is ${this.name} and I am ${this.age} years old.`
+            }
+        }
+        class Sign{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+                console.log('this is constructor');
+            }
+            //prototype
+            get showBd(){
+                let currentYear = 2022;
+                return currentYear - this.age;
+            }
+            static run(){
+                return "I am running!"
+            }
+        }
+
+
+    </script>
+</body>
+</html>

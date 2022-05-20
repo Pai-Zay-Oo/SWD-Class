@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = ['pai','zay','oo','htin','lin','oo'];
+        let numArray = [34, 55, 98, 100, 43, 98];
+        let apiData = [
+            {id:1, name:"pai zay", room:'a', money: 1000},
+            {id:2, name:"zoni", room:'b', money: 2000},
+            {id:3, name:"htin lin", room:'a', money: 3000},
+            {id:4, name:"nay min", room:'a', money: 4000},
+            {id:5, name:"aung kyaw", room:'e', money: 5000},
+        ]
+
+        // let name2 = apiData.map(ele => {return ele.room})
+        // console.log(name2)
+    //    let d = numArray.filter(el=>el>50).reduce((x,y)=>x+y);
+    //    console.log(d)
+    let x = apiData.filter(el=>el.room ==="a").map(el=>el.money).reduce((x,y)=>x+y);
+    console.log(x)
+    </script>
+</body>
+</html>
