@@ -22,8 +22,10 @@
         // console.log(name2)
     //    let d = numArray.filter(el=>el>50).reduce((x,y)=>x+y);
     //    console.log(d)
-    let x = apiData.filter(el=>el.room ==="a").map(el=>el.money).reduce((x,y)=>x+y);
-    console.log(x)
+    // let x = apiData.filter(el=>el.room ==="a").map(el=>el.money).reduce((x,y)=>x+y);
+    // console.log(x)
+    let data = apiData.filter(el => el.room === 'a').map(el=> el.money).reduce((x,y)=>x+y);
+    console.log(data);
     </script>
 </body>
 </html>

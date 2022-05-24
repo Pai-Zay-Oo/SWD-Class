@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object destructuring
+        let mySelf = {name: 'Pai Zay Oo',job: 'Student',age: 24};
+        let {name ,job ,age} = mySelf;
+        //Array destructuring
+        let car = ['Toyota','Nissan','Honda'];
+        let city = ['Yangon','Mandalay','Bago'];
+        let copyCar = [...car];
+        let add=[...car, ...city];
+        let [city1, ,city3] = city;
+        console.log(city3);
+        //Rest parameter
+        let calculate = (...params) => {
+            let total = 0;
+            for (let i=0; i<params.length;i++){
+                total+= params[i];
+            };
+            return total;
+        };
+       
+        
+    </script>
+</body>
+</html>

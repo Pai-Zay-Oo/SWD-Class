@@ -42,6 +42,19 @@
             }
         }
 
+        class Reg{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+                console.log('This is constructor.')
+            }
+            //prototype
+            get showBd(){
+                let currentYear = 2022;
+                return currentYear - this.age;
+            }
+        }
+
 
     </script>
 </body>
