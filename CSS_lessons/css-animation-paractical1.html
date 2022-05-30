@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: blanchedalmond;
+        }
+        .para{
+            width: 300px;
+            animation: toRight 1.5s;
+        }
+        .img{
+            border-radius: 50%;
+            animation: toLeft 1.5s;
+        }
+        .para h1{
+            animation: toRight 1.5s;
+
+        }
+        .para p{
+            animation: toRight 2s ;
+
+        }
+        .heart{
+            width: 100px;
+            position: fixed;
+            bottom: 80px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            animation: shake 1s infinite alternate;
+        }
+        @keyframes toRight {
+            from{
+                transform: translateX(-600px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+        @keyframes toLeft {
+            from{
+                transform: translateX(600px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+        @keyframes shake {
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="para">
+            <h1>jihyo</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus hic sit facilis magni, iste perspiciatis laborum sapiente dicta illum reiciendis quibusdam voluptatibus maiores quis sint vel, earum quod libero modi!</p>
+        </div>
+        <img src="./images/love.jpg"  class="img" style="width: 200px; height: 150px;" alt="">
+      
+    </div>
+    <img src="./images/heart.png" class="heart"alt=""> 
+</body>
+</html>

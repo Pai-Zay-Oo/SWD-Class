@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .obj{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            border: 10px solid;
+            border-color: black red;
+            transform: translate(900px,400px);
+            animation: test 3s;
+        }
+        @keyframes test {
+            0%{
+                transform: translate(-300px,-400px) rotate(0);
+            }
+            10%{
+                transform: translate(100px,400px) rotate(360deg);
+            }
+            20%{
+                transform: translate(200px,200px) rotate(720deg);
+            }
+            30%{
+                transform: translate(300px, 400px) rotate(1080deg);
+            }
+            40%{
+                transform: translate(400px,300px) rotate(1440deg);
+            }
+            50%{
+                transform: translate(500px,400px) rotate(1800deg);
+            }
+            60%{
+                transform: translate(550px,100px) rotate(2160deg);
+            }
+            100%{
+                transform: translate(900px,400px) rotate(2520deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="obj"></div>
+</body>
+</html>
