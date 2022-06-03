@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .obj{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin-top: 30px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <button class="animate">Animate</button>
+    <button class="stop">Stop</button>
+    
+    <div class="obj"></div>
+    <button class="chain">Chain</button>
+    <div class="text">Pai Zay Oo</div>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $('.animate').click(function(){
+            $('.obj').animate({
+                left: "+=200px",
+                height: "+=100px",
+                width: "+=100px",
+            },3000,function(){
+                console.log("Animation Finished!")
+            })
+        });
+        $('.stop').click(function(){
+            $('.obj').stop()
+        });
+        $('.chain').click(function(){
+            $('.text').css("color","red").hide(1000).show(1000)
+        })
+    </script>
+</body>
+</html>
